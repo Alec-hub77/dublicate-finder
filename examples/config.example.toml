@@ -1,0 +1,12 @@
+[scan]
+# File sizes are in bytes; both bounds are inclusive.
+min_size = 0
+# max_size = 1073741824
+# Glob patterns match a filename or path relative to the scan directory.
+exclude = ["*.tmp", "cache/*"]
+# Include dotfiles and Windows hidden files.
+hidden = false
+# Bounded number of concurrent hashing threads.
+workers = 4
+# Bytes read at a time while hashing.
+chunk_size = 1048576
